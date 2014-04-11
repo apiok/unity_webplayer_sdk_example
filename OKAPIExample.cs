@@ -18,13 +18,15 @@ public class OKAPIExample : OdnoklassnikiWebplayerAPI {
 		};
 		base.CallApiMethod(p);
 		base.JSgetPageInfo();
+		base.GetUrlVars();
 		//uncomment only one of this methods in one try to try it, becouse using many UI methods at same time is bad
 		//base.JSsetWindowSize(100,100);
-		//base.JSshowInvite(null, null, null);
+		//base.JSshowInvite(null, null, "543407152182;382406172993");
 		//base.JSshowInvite("Let's play my game", null, null);
 		//base.JSshowInvite("Let's play my game", "aaa=bbb", "543407152182;382406172993");
 		//base.JSshowPayment("Яблоко", "Это очень вкусно!", "777", 1, null, null, "ok", "true");
-		base.JSshowPermissions(permissions);
+		//base.JSshowPermissions(permissions);
+		base.Publish("Can I publish?", "I use Unity SDK", null, null);
 		#endif
 	}
 
